@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestion du portfolio</title>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="profil.js" defer></script>
+  <script src="gestion.js" defer></script>
+</head>
+<body>
+  <main class="shell editor">
+    <div class="bar"><a href="index.html">← Voir le portfolio</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Activer le mode sombre"><span aria-hidden="true">☾</span></button></div>
+    <h1>Gestion du portfolio</h1>
+    <p>Modifie tes rubriques en français et en anglais. Le brouillon reste dans ce navigateur. Pour publier tes changements, télécharge le nouveau fichier <code>profil.js</code> et remplace celui du dépôt GitHub.</p>
+    <div class="toolbar">
+      <label>Rubrique <select id="rubrique"></select></label>
+      <button type="button" class="button" id="ajouter">Ajouter une entrée</button>
+      <button type="button" class="button primary" id="exporter">Télécharger profil.js</button>
+      <button type="button" class="button" id="reinitialiser">Reprendre la version du site</button>
+    </div>
+    <p id="etat" role="status"></p>
+    <div id="champs"></div>
+  </main>
+</body>
+</html>
